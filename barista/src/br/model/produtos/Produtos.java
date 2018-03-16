@@ -1,4 +1,4 @@
-package beans;
+package br.model.produtos;
 
 public class Produtos {
 	

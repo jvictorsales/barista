@@ -21,7 +21,7 @@
 	<div class="row">
 		<form class="col s6" action="#">
 		
-			<p><strong><h5>Espressos</h5></strong></p>		
+			<h5><strong>Espressos</strong></h5>	
 				
 			<div class="col s12">
 				<div class="col s4">
@@ -76,7 +76,7 @@
     			</div>
     		</div>
     		
-    		<p><strong><h5>Cappuccinos</h5></strong></p>
+    		<h5><strong>Cappuccinos</strong></h5>
     		
     		<div class="col s12">
 				<div class="col s4">
@@ -117,7 +117,7 @@
     			</div>
     		</div>
     		
-    		<p><strong><h5>Adicionais</h5></strong></p>
+    		<h5><strong>Adicionais</strong></h5>
     		
     		<div class="col s12">
 				<div class="col s4">
@@ -174,7 +174,7 @@
     			</div>
     		</div>
     		
-    		<p><strong><h5>Sanduíches</h5></strong></p>
+    		<h5><strong>Sanduíches</strong></h5>
     		
     		<div class="col s12">
 				<div class="col s4">
@@ -280,7 +280,7 @@
     			</div>
     		</div>
     		
-    		<p><strong><h5>Sobremesas</h5></strong></p>
+    		<h5><strong>Sobremesas</strong></h5>
     		
     		<div class="col s12">
 				<div class="col s4">
