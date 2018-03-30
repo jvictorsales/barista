@@ -2,51 +2,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   	<!--Import Google Icon Font-->
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   	<!-- Materialize CSS -->
-  	<link rel="stylesheet" type="text/css" href="css/materialize.css" media="screen,projection"/>
-  	<link rel="stylesheet" href="css/custom.css"/>
-	<title>Barista</title>
+  	<link rel="stylesheet" type="text/css" href="../css/materialize.css" media="screen,projection"/>
+  	<link rel="stylesheet" href="../css/custom.css"/>
+  
+  	<title>Meus Pedidos</title>
 </head>
 
 <body>
+<%@include file="includes/header.jsp" %>
 
-	<!--
-	
+
+
+
+
 	<div class="parallax-container">
-  	<div class="parallax"><img src="img/bg/coffee.jpg"></div>
+    	<div class="parallax"><img src="../img/bg/coffee.jpg"></div>
   	</div>
- 	
- 	-->
- 	
- 	<h4>Tela de Login</h4>
- 	
- 	
- 	
- 	
- 	
+  	  
   	<!-- JQuery -->
   	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
   	<!-- Materialize JS -->
-  	<script type="text/javascript" src="js/materialize.js"></script>
+  	<script type="text/javascript" src="../js/materialize.js"></script>
 
-
-
-  	<!--
-  	
   	<script>
     	$(document).ready(function(){
         	$('.parallax').parallax();
         });
-  	</script>
-  	
-  	-->
-  	 
+    </script>
+    
+<%@include file="includes/footer.jsp"%>
 </body>
 </html>

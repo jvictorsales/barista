@@ -1,11 +1,20 @@
 package br.model.produtos;
 
-public class Produtos {
+public abstract class Produtos {
 	
+	private int id;
 	private String nomeProduto;
 	private float preco;
 	private int estoque;
 	
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
 	
 	public String getNome() {
 		return nomeProduto;

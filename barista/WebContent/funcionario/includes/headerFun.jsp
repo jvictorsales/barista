@@ -4,11 +4,12 @@
 <body>
   <nav>
       <div class="nav-wrapper brown lighten-1"> 
-          <a href="pedidos.jsp" class="brand-logo right"><img src="../img/icones/cafe.png" class="circle responsive-img" height="70px" width="70px"></a>
+          <a href="listarpedidos.jsp" class="brand-logo right"><img src="../img/icones/cafe.png" class="circle responsive-img" height="70px" width="70px"></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="pedidos.jsp">Início</a></li>
+            <li><a href="listarpedidos.jsp">Painel de Pedidos</a></li>
             <li><a href="cardapio.jsp">Cardápio</a></li>
-            <li><a href="#">Perfil</a></li>
+            <li><a href="incluirprodutos.jsp">Incluir Produtos</a></li>
+            <li><a href="#">Meu Perfil</a></li>
           </ul>
       </div>
   </nav>

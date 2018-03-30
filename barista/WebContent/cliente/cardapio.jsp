@@ -4,7 +4,7 @@
 <html lang="pt-br">
 
 <head>
-  	<meta charset="utf-8">
+	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   	<!--Import Google Icon Font-->
@@ -18,8 +18,8 @@
 </head>
 
 <body>
-<%@include file="includes/headerFun.jsp"%>
-	
+<%@include file="includes/header.jsp"%>
+
 	<br/>
 	
 	<fieldset>
@@ -77,23 +77,23 @@
 	
 	<br/>
 	<br/>
-  	
-  	<div class="parallax-container">
+
+	<div class="parallax-container">
     	<div class="parallax"><img src="../img/bg/coffee.jpg"></div>
-  	</div>
-  
-  	<!-- JQuery -->
+	</div>
+	  
+	<!-- JQuery -->
   	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-  	<!-- Materialize JS -->
+	<!-- Materialize JS -->
   	<script type="text/javascript" src="../js/materialize.js"></script>
 
   	<script>
-	    $(document).ready(function(){
+    	$(document).ready(function(){
         	$('.parallax').parallax();
         });
     </script>
     
-<%@include file="includes/footerFun.jsp"%>
+<%@include file="includes/footer.jsp"%>
 </body>
 </html>

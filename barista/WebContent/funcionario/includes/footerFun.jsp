@@ -14,7 +14,6 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Menu</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="pedidos.jsp">Home</a></li>
                   <li><a class="grey-text text-lighten-3" href="https://github.com/jvictorsales" target="_blank">Contato</a></li>
                 </ul>
               </div>
