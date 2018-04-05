@@ -1,4 +1,4 @@
-package br.model.produtos;
+package br.model;
 
 public class Cafe extends Produtos{
 	

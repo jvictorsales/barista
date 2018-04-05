@@ -1,10 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-
-<html lang="pt-br">
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <head>
-	<meta charset="utf-8">
+  	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   	<!--Import Google Icon Font-->
@@ -14,47 +12,27 @@
   	<link rel="stylesheet" type="text/css" href="../css/materialize.css" media="screen,projection"/>
   	<link rel="stylesheet" href="../css/custom.css"/>
   	
-  	<title>Cardápio</title>
+  	<title>Cardápio de Comidas</title>
 </head>
 
 <body>
 <%@include file="includes/header.jsp"%>
+	
+	<br/>
+	<div class="row">
+	<form class="col s6" action="http://localhost:8080/barista/barista/index?action=PesquisarComidaCliente" method="post">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome"/>
+		<button type="submit" class="btn waves-effect waves-light brown">Pesquisar</button>			
+	</form>
+	</div>
 
-	<br/>
-	
-	<fieldset>
-		<legend><strong>Bebidas</strong></legend>
-		<table class="highlight responsive-table">
-        	<thead>
-          		<tr>
-              		<th>Nome</th>
-              		<th>Preço</th>
-              		<th>Condimentos</th>
-              		<th>Categoria</th>
-          		</tr>
-        	</thead>
-        
-        	<tbody>
-		 		<tr>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-          		</tr>         
-        	</tbody>
-        	  
-    	</table>
-	</fieldset>
-	
-	<br/>
-	<br/>
-	
 	<fieldset>
 		<legend><strong>Comidas</strong></legend>
 		<table class="highlight responsive-table">
         	<thead>
           		<tr>
+          			<th>ID</th>
               		<th>Nome</th>
               		<th>Preço</th>
               		<th>Estoque</th>
@@ -64,36 +42,38 @@
         	</thead>
         	
         	<tbody>
+        	<c:forEach items="${comidas}" var="ex">
 		 		<tr>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-          		</tr>         
+            		<td>${ex.id}</td>
+            		<td>${ex.nome}</td>
+            		<td>${ex.preco}</td>
+            		<td>${ex.estoque}</td>
+            		<td>${ex.categoria}</td>
+            		<td><c:out value="${ex.diet ? 'Sim' : 'Não' }"></c:out></td>
+          		</tr> 
+          	</c:forEach>        
         	</tbody>  
     	</table>
 	</fieldset>
 	
 	<br/>
 	<br/>
-
-	<div class="parallax-container">
+  	
+  	<div class="parallax-container">
     	<div class="parallax"><img src="../img/bg/coffee.jpg"></div>
-	</div>
-	  
-	<!-- JQuery -->
+  	</div>
+  
+  	<!-- JQuery -->
   	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-	<!-- Materialize JS -->
+  	<!-- Materialize JS -->
   	<script type="text/javascript" src="../js/materialize.js"></script>
 
   	<script>
-    	$(document).ready(function(){
+	    $(document).ready(function(){
         	$('.parallax').parallax();
         });
     </script>
     
 <%@include file="includes/footer.jsp"%>
 </body>
-</html>

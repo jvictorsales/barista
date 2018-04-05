@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html lang="pt-br">
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <head>
 <meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,21 +11,16 @@
   	<!-- Materialize CSS -->
   	<link rel="stylesheet" type="text/css" href="css/materialize.css" media="screen,projection"/>
   	<link rel="stylesheet" href="css/custom.css"/>
-	<title>Barista</title>
+	<title>Index</title>
 </head>
 
 <body>
 
-	<!--
 	
 	<div class="parallax-container">
-  	<div class="parallax"><img src="img/bg/coffee.jpg"></div>
+		<div class="center"><h4>Página Inicial</h4></div>
+  		<div class="parallax"><img src="img/bg/coffee.jpg"></div>
   	</div>
- 	
- 	-->
- 	
- 	<h4>Tela de Login</h4>
- 	
  	
  	
  	
@@ -38,7 +33,6 @@
 
 
 
-  	<!--
   	
   	<script>
     	$(document).ready(function(){
@@ -46,7 +40,5 @@
         });
   	</script>
   	
-  	-->
-  	 
+<%@include file="/cliente/includes/footer.jsp"%>
 </body>
-</html>

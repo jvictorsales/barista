@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-
-<html lang="pt-br">
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <head>
   	<meta charset="utf-8">
@@ -14,47 +12,27 @@
   	<link rel="stylesheet" type="text/css" href="../css/materialize.css" media="screen,projection"/>
   	<link rel="stylesheet" href="../css/custom.css"/>
   	
-  	<title>Cardápio</title>
+  	<title>Comidas</title>
 </head>
 
 <body>
 <%@include file="includes/headerFun.jsp"%>
 	
 	<br/>
-	
-	<fieldset>
-		<legend><strong>Bebidas</strong></legend>
-		<table class="highlight responsive-table">
-        	<thead>
-          		<tr>
-              		<th>Nome</th>
-              		<th>Preço</th>
-              		<th>Condimentos</th>
-              		<th>Categoria</th>
-          		</tr>
-        	</thead>
-        
-        	<tbody>
-		 		<tr>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-          		</tr>         
-        	</tbody>
-        	  
-    	</table>
-	</fieldset>
-	
-	<br/>
-	<br/>
-	
+	<div class="row">
+	<form class="col s6" action="http://localhost:8080/barista/barista/index?action=PesquisarComida" method="post">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" />
+		<button type="submit" class="btn waves-effect waves-light brown">Pesquisar</button>			
+	</form>
+	</div>
+		
 	<fieldset>
 		<legend><strong>Comidas</strong></legend>
 		<table class="highlight responsive-table">
         	<thead>
           		<tr>
+          			<th>ID</th>
               		<th>Nome</th>
               		<th>Preço</th>
               		<th>Estoque</th>
@@ -64,13 +42,26 @@
         	</thead>
         	
         	<tbody>
+        	<c:forEach items="${comidas}" var="ex">
 		 		<tr>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-            		<td></td>
-          		</tr>         
+            		<td>${ex.id}</td>
+            		<td>${ex.nome}</td>
+            		<td>${ex.preco}</td>
+            		<td>${ex.estoque}</td>
+            		<td>${ex.categoria}</td>
+            		<td><c:out value="${ex.diet ? 'Sim' : 'Não' }"></c:out></td>
+            		<td>
+            			<!-- href="http://localhost:8080/barista/barista/index?action=AlterarComida&id=${e.id}" -->
+            			<a class="btn waves-effect waves-light brown" href="#">Editar</a>
+            		</td>
+            		<td>
+						<form action="http://localhost:8080/barista/barista/index?action=RemoverComida" method="post">
+							<input type="hidden" name="id" value="${ex.id}" />
+							<button class="btn waves-effect waves-light brown" type="submit">Excluir</button>
+						</form>
+					</td>
+          		</tr> 
+          	</c:forEach>        
         	</tbody>  
     	</table>
 	</fieldset>
@@ -96,4 +87,3 @@
     
 <%@include file="includes/footerFun.jsp"%>
 </body>
-</html>

@@ -1,9 +1,9 @@
-package br.model.produtos;
+package br.model;
 
 public class Comidas extends Produtos{
 	
 	private boolean diet;
-
+	
 	public boolean isDiet() {
 		return diet;
 	}
