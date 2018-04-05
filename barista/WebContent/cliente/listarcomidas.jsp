@@ -19,46 +19,48 @@
 <%@include file="includes/header.jsp"%>
 	
 	<br/>
+	
 	<div class="row">
-	<form class="col s6" action="http://localhost:8080/barista/barista/index?action=PesquisarComidaCliente" method="post">
-		<label for="nome">Nome:</label>
-		<input type="text" id="nome" name="nome"/>
-		<button type="submit" class="btn waves-effect waves-light brown">Pesquisar</button>			
-	</form>
+		<form class="col s6" action="http://localhost:8080/barista/barista/index?action=PesquisarComidaCliente" method="post">
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome"/>
+			<button type="submit" class="btn waves-effect waves-light brown">Pesquisar</button>			
+		</form>
 	</div>
 
-	<fieldset>
-		<legend><strong>Comidas</strong></legend>
-		<table class="highlight responsive-table">
-        	<thead>
-          		<tr>
-          			<th>ID</th>
-              		<th>Nome</th>
-              		<th>Preço</th>
-              		<th>Estoque</th>
-              		<th>Categoria</th>
-              		<th>Diet</th>
-          		</tr>
-        	</thead>
+	<div class="row">
+		<div class="col s12">
+			<fieldset>
+				<legend><strong>Comidas</strong></legend>
+				<table class="highlight responsive-table centered">
+        			<thead>
+          				<tr>
+          					<th>ID</th>
+              				<th>Nome</th>
+              				<th>Preço</th>
+              				<th>Estoque</th>
+              				<th>Categoria</th>
+              				<th>Diet</th>
+          				</tr>
+        			</thead>
         	
-        	<tbody>
-        	<c:forEach items="${comidas}" var="ex">
-		 		<tr>
-            		<td>${ex.id}</td>
-            		<td>${ex.nome}</td>
-            		<td>${ex.preco}</td>
-            		<td>${ex.estoque}</td>
-            		<td>${ex.categoria}</td>
-            		<td><c:out value="${ex.diet ? 'Sim' : 'Não' }"></c:out></td>
-          		</tr> 
-          	</c:forEach>        
-        	</tbody>  
-    	</table>
-	</fieldset>
+        			<tbody>
+        				<c:forEach items="${comidas}" var="ex">
+		 					<tr>
+            					<td>${ex.id}</td>
+            					<td>${ex.nome}</td>
+            					<td>${ex.preco}</td>
+            					<td>${ex.estoque}</td>
+            					<td>${ex.categoria}</td>
+            					<td><c:out value="${ex.diet ? 'Sim' : 'Não' }"></c:out></td>
+          					</tr> 
+          				</c:forEach>        
+        			</tbody>  
+    			</table>
+			</fieldset>
+		</div>
+	</div>
 	
-	<br/>
-	<br/>
-  	
   	<div class="parallax-container">
     	<div class="parallax"><img src="../img/bg/coffee.jpg"></div>
   	</div>
