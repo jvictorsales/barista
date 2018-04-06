@@ -20,7 +20,7 @@
 
 	<div class="row">
 		
-		<form class="col s12" action="/barista/funcionario/?action=CadastrarCafe" method="post">
+		<form class="col s12" action="/barista/index?action=CadastrarCafe" method="post">
 			<br>
 			<br>
 			

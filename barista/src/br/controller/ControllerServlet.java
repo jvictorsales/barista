@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.controller.actions.Action;
 
-@WebServlet("/")
+@WebServlet("/index")
 public class ControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

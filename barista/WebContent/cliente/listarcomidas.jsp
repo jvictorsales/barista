@@ -21,7 +21,7 @@
 	<br/>
 	
 	<div class="row">
-		<form class="col s6" action="/barista/cliente/?action=PesquisarComidaCliente" method="post">
+		<form class="col s6" action="/barista/index?action=PesquisarComidaCliente" method="post">
 			<label for="nome">Nome:</label>
 			<input type="text" id="nome" name="nome"/>
 			<button type="submit" class="btn waves-effect waves-light brown">Pesquisar</button>			

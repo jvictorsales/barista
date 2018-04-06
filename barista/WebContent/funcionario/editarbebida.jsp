@@ -19,7 +19,7 @@
 	
 	<br/>
 	<div class="row">
- 	<form class=" col s12" action="/barista/funcionario/?action=AlterarCafe" method="post">
+ 	<form class=" col s12" action="/barista/index?action=AlterarCafe" method="post">
 		  
 		  <fieldset id="bebidas">
 				<legend><strong>Editar Bebida</strong></legend>

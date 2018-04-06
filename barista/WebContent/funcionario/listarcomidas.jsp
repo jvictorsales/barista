@@ -21,7 +21,7 @@
 	<br/>
 	
 	<div class="row">
-		<form class="col s6" action="/barista/funcionario/?action=PesquisarComida" method="post">
+		<form class="col s6" action="/barista/index?action=PesquisarComida" method="post">
 			<label for="nome">Nome:</label>
 			<input type="text" id="nome" name="nome" />
 			<button type="submit" class="btn waves-effect waves-light brown">Pesquisar</button>			
@@ -54,10 +54,10 @@
             					<td>${ex.categoria}</td>
             					<td><c:out value="${ex.diet ? 'Sim' : 'Não' }"></c:out></td>
             					<td>
-            						<a class="btn waves-effect waves-light brown" href="/barista/funcionario/?action=AlterarComida">Editar</a>
+            						<a class="btn waves-effect waves-light brown" href="/barista/index?action=AlterarComida&id=${ex.id}">Editar</a>
             					</td>
             					<td>
-									<form class="col s3" action="/barista/funcionario/?action=RemoverComida" method="post">
+									<form class="col s3" action="/barista/index?action=RemoverComida" method="post">
 										<input type="hidden" name="id" value="${ex.id}" />
 										<button class="btn waves-effect waves-light brown" type="submit">Excluir</button>
 									</form>
