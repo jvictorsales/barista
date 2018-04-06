@@ -3,9 +3,9 @@
     	<div class="row">
         	<div class="col l6 s12">
             	<h5 class="white-text">Siga-nos nas redes sociais</h5>
-                <a href="https://github.com/jvictorsales" target="_blank"><img src="../img/icones/git.png" class="circle responsive-img" height="40px" width="40px"></a>
-                <a href="https://www.facebook.com/joaovictorlsales" target="_blank"><img src="../img/icones/fb.png" class="circle responsive-img" height="40px" width="40px"></a>
-                <a href="https://www.instagram.com/joaovictorlsales" target="_blank"><img src="../img/icones/insta.png" class="circle responsive-img" height="40px" width="40px"></a>
+                <a href="https://github.com/jvictorsales" target="_blank"><img src="/barista/img/icones/git.png" class="circle responsive-img" height="40px" width="40px"></a>
+                <a href="https://www.facebook.com/joaovictorlsales" target="_blank"><img src="/barista/img/icones/fb.png" class="circle responsive-img" height="40px" width="40px"></a>
+                <a href="https://www.instagram.com/joaovictorlsales" target="_blank"><img src="/barista/img/icones/insta.png" class="circle responsive-img" height="40px" width="40px"></a>
             </div>
             <div class="col l4 offset-l2 s12">
             	<h5 class="white-text">Menu</h5>

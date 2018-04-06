@@ -9,8 +9,8 @@
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   	<!-- Materialize CSS -->
-  	<link rel="stylesheet" type="text/css" href="../css/materialize.css" media="screen,projection"/>
-  	<link rel="stylesheet" href="../css/custom.css"/>
+  	<link rel="stylesheet" type="text/css" href="/barista/css/materialize.css" media="screen,projection"/>
+  	<link rel="stylesheet" href="/barista/css/custom.css"/>
   	
   	<title>Cardápio de Comidas</title>
 </head>
@@ -21,7 +21,7 @@
 	<br/>
 	
 	<div class="row">
-		<form class="col s6" action="http://localhost:8080/barista/barista/index?action=PesquisarComida" method="post">
+		<form class="col s6" action="/barista/funcionario/?action=PesquisarComida" method="post">
 			<label for="nome">Nome:</label>
 			<input type="text" id="nome" name="nome" />
 			<button type="submit" class="btn waves-effect waves-light brown">Pesquisar</button>			
@@ -54,11 +54,10 @@
             					<td>${ex.categoria}</td>
             					<td><c:out value="${ex.diet ? 'Sim' : 'Não' }"></c:out></td>
             					<td>
-            						<!-- href="http://localhost:8080/barista/barista/index?action=AlterarComida&id=${e.id}" -->
-            						<a class="btn waves-effect waves-light brown" href="#">Editar</a>
+            						<a class="btn waves-effect waves-light brown" href="/barista/funcionario/?action=AlterarComida">Editar</a>
             					</td>
             					<td>
-									<form class="col s3" action="http://localhost:8080/barista/barista/index?action=RemoverComida" method="post">
+									<form class="col s3" action="/barista/funcionario/?action=RemoverComida" method="post">
 										<input type="hidden" name="id" value="${ex.id}" />
 										<button class="btn waves-effect waves-light brown" type="submit">Excluir</button>
 									</form>
@@ -72,14 +71,14 @@
 	</div>
 	
   	<div class="parallax-container">
-    	<div class="parallax"><img src="../img/bg/coffee.jpg"></div>
+    	<div class="parallax"><img src="/barista/img/bg/coffee.jpg"></div>
   	</div>
   
   	<!-- JQuery -->
   	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
   	<!-- Materialize JS -->
-  	<script type="text/javascript" src="../js/materialize.js"></script>
+  	<script type="text/javascript" src="/barista/js/materialize.js"></script>
 
   	<script>
 	    $(document).ready(function(){

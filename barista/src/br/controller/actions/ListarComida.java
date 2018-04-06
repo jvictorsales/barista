@@ -15,9 +15,7 @@ public class ListarComida implements Action{
 	@Override
 	public String executa(HttpServletRequest request, HttpServletResponse response) {
 		
-		String nome = request.getParameter(null);
-		
-		List<Produtos> comidas = db.getComidas(nome);
+		List<Produtos> comidas = db.getComidas(null);
 		request.setAttribute("comidas", comidas);
 		
 		return "/cliente/listarcomidas.jsp";

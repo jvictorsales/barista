@@ -15,9 +15,7 @@ public class ListarCafe implements Action {
 	@Override
 	public String executa(HttpServletRequest request, HttpServletResponse response) {
 		
-		String nome = request.getParameter(null);
-		
-		List<Produtos> bebidas = db.getBebidas(nome);
+		List<Produtos> bebidas = db.getBebidas(null);
 		request.setAttribute("bebidas", bebidas);
 		
 		

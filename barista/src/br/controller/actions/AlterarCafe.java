@@ -26,14 +26,14 @@ public class AlterarCafe implements Action{
 		String condimentos = request.getParameter("condimentos");
 		String categoria = request.getParameter("categoria");
 		
-		Cafe c = (Cafe) db.getBebida(id);
+		Cafe bebida = (Cafe) db.getBebida(id);
 		
-		c.setNome(nome);
-		c.setPreco(preco);
-		c.setCategoria(categoria);
-		c.setCondimentos(condimentos);
+		bebida.setNome(nome);
+		bebida.setPreco(preco);
+		bebida.setCategoria(categoria);
+		bebida.setCondimentos(condimentos);
 		
-		request.setAttribute("bebida", c);
+		request.setAttribute("bebida", bebida);
 		
 		return "/funcionario/editarbebida.jsp";
 	}
