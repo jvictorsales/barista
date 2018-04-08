@@ -46,39 +46,15 @@
           			<label for="estoque">Estoque</label>
         		</div>
         	
-        		<div class="row">
-    				<fieldset class="col s4" id="categorias">
-						<h6><strong>Categorias</strong></h6>
-					
-    					<p>
-	      					<input name="categoria" type="radio" id="sand" value="Sanduíches ${comida.categoria}" required/>
-      						<label for="sand">Sanduíches</label>
-    					</p>
-    				
-    					<p>
-	      					<input name="categoria" type="radio" id="sobr" value="Sobremesas ${comida.categoria}" required/>
-      						<label for="sobr">Sobremesas</label>
-    					</p>
-    					<br>
-    				</fieldset>
-    			</div>
-    		
-    			<div class="row">
-		    		<fieldset class="col s4" id="diet">
-						<h6><strong>Diet</strong></h6>
-					
-						<p>
-	      					<input name="diet" type="radio" id="diet1" value="true ${comida.diet}" required/>
-      						<label for="diet1">Sim</label>
-    					</p>
-    			
-    					<p>
-	      					<input name="diet" type="radio" id="diet0" value="false ${comida.diet}" required/>
-      						<label for="diet0">Não</label>
-    					</p>
-    					<br>
-    				</fieldset>
-    			</div>
+        		<div class="input-field col s4 m4">
+        			<input placeholder="Ex.: Sanduíches / Sobremesas" name="categoria" id="categoria" value="${comida.categoria}" type="text" maxlength="10" class="validate" required>
+        			<label for="categoria">Categoria da Comida</label>
+        		</div>
+        		
+        		<div class="input-field col s4 m4">
+        			<input placeholder="Ex.: Sim / Não" name="diet" id="diet" value="<c:out value="${comida.diet ? 'Sim' : 'Não'}" />" type="text" maxlength="3" class="validate" required>
+        			<label for="diet">Diet</label>
+        		</div>
 			</fieldset>
 			
         	<br>

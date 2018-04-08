@@ -24,7 +24,7 @@ public class StaticDB {
 			produtos.setId(idCom);
 			produtos.setNome("Comida " + i);
 			produtos.setPreco((float) i);
-			produtos.setCategoria("Sobremesa");
+			produtos.setCategoria("Sobremesas");
 			produtos.setEstoque(i);
 			
 			comidas.add(produtos);
@@ -36,7 +36,7 @@ public class StaticDB {
 			produtos.setId(idCaf);
 			produtos.setNome("Cafe " + i);
 			produtos.setPreco((float)i);
-			produtos.setCategoria("Espresso");
+			produtos.setCategoria("Espressos");
 			produtos.setCondimentos("Limão");
 			
 			cafes.add(produtos);

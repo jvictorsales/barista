@@ -48,12 +48,12 @@
 						<h6><strong>Categorias</strong></h6>
 				
 						<p>
-	    					<input name="categoria" type="radio" id="capp" value="Cappuccinos ${bebida.categoria}" required/>
+	    					<input name="categoria" type="radio" id="capp" value="Cappuccinos" required/>
       						<label for="capp">Cappuccinos</label>
     					</p>
     				
     					<p>
-	      					<input name="categoria" type="radio" id="espr" value="Espressos ${bebida.categoria}" required/>
+	      					<input name="categoria" type="radio" id="espr" value="Espressos" required/>
       						<label for="espr">Espressos</label>
     					</p>
     					<br>

@@ -28,7 +28,7 @@
 				<input type="hidden" name="id" value="${bebida.id}" />
 				
 				<div class="input-field col s4 m4">
-        			<input placeholder="Ex.: Cappuccino Tradicional" name="nomeBebida" id="nome" value="${bebida.nome}" type="text" maxlength="50" class="validate" required>
+        			<input placeholder="Ex.: Cappuccino Tradicional" name="nome" id="nome" value="${bebida.nome}" type="text" maxlength="50" class="validate" required>
         			<label for="nome">Nome do Café</label>
         		</div>
         	
@@ -42,22 +42,11 @@
         			<label for="preco">Preço do Café</label>
         		</div>
     		
-    			<div class="row">	
-					<fieldset class="col s4" id="categorias">
-						<h6><strong>Categorias</strong></h6>
-				
-						<p>
-	    					<input name="categoria" type="radio" id="capp" value="Cappuccinos ${bebida.categoria}" required/>
-      						<label for="capp">Cappuccinos</label>
-    					</p>
-    				
-    					<p>
-	      					<input name="categoria" type="radio" id="espr" value="Espressos ${bebida.categoria}" required/>
-      						<label for="espr">Espressos</label>
-    					</p>
-    					<br>
-    				</fieldset>
-    			</div>
+    			<div class="input-field col s3 m3">
+        			<input placeholder="Ex.: Espresso" name="categoria" id="cateoria" value="${bebida.categoria}" type="text"  maxlength="20" class="validate" required>
+        			<label for="categoria">Categoria do Café</label>
+        		</div>
+        		
 			</fieldset>
 			
 		  <br>

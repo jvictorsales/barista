@@ -53,7 +53,7 @@
             					<td>${e.condimentos}</td>
             					<td>${e.categoria}</td>
             					<td>
-            						<a class="btn waves-effect waves-light brown" href="/barista/index?action=AlterarCafe&id=${e.id}">Editar</a>
+            						<a class="btn waves-effect waves-light brown" href="/barista/index?action=EditarCafe&id=${e.id}">Editar</a>
             					</td>
             					<td>
 									<form class="col s3" action="/barista/index?action=RemoverCafe" method="post">

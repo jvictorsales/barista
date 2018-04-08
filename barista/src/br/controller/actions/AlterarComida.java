@@ -20,11 +20,18 @@ public class AlterarComida implements Action{
 			id = Long.valueOf(idRequest);
 		}
 		
+		Boolean diet = null;
+		String dietRequest = request.getParameter("diet").toUpperCase();
 		String nome = request.getParameter("nome");
 		Float preco = Float.parseFloat(request.getParameter("preco"));
 		Integer estoque = Integer.parseInt(request.getParameter("estoque"));
-		Boolean diet = Boolean.parseBoolean(request.getParameter("diet"));
 		String categoria = request.getParameter("categoria");
+		
+		if(dietRequest.startsWith("S")) {
+			diet = true;
+		} else {
+			diet = false;
+		}
 		
 		Comidas c = (Comidas) db.getComida(id);
 		c.setNome(nome);

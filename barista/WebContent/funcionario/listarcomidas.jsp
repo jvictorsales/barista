@@ -54,7 +54,7 @@
             					<td>${ex.categoria}</td>
             					<td><c:out value="${ex.diet ? 'Sim' : 'Não' }"></c:out></td>
             					<td>
-            						<a class="btn waves-effect waves-light brown" href="/barista/index?action=AlterarComida&id=${ex.id}">Editar</a>
+            						<a class="btn waves-effect waves-light brown" href="/barista/index?action=EditarComida&id=${ex.id}">Editar</a>
             					</td>
             					<td>
 									<form class="col s3" action="/barista/index?action=RemoverComida" method="post">
